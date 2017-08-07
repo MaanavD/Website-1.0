@@ -24,7 +24,7 @@ a:active {
 h1,
 h2,
 h4 {
- font-family: 'PT Sans Narrow', Arial, sans-serif;
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
  text-decoration:uppercase;
  font-weight:700;
  }
@@ -46,7 +46,7 @@ p {
 /*Nav*/
 .navbar {
   text-transform: uppercase;
-  font-family: anurati !important; /*Change*/
+  /*font-family: !important; Change*/
   font-weight: 700;
 }
 .navbar a{
@@ -64,7 +64,7 @@ p {
 .header{
   height: 600px;
   width: 100%;
-  patting: 30px 0 30px;
+  padding: 30px 0 30px;
   margin-top: 50px;
   background-image: url(../images/wallpaper.jpg);
   background-position: center center;
@@ -72,12 +72,92 @@ p {
   background-size: cover;
   color: #fff;
 }
+.header img{
+  height: 350px;
+  width: 450px;
+  margin: 70px 0 0 40px;
+}
+.header h1{
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 30px;
+}
+.header h1,
+.header p,
+.header button{
+  margin-top: 20px;
+}
+.header .btn{
+  border-radius: 0;
+  margin: 40px 20px;
+}
+.name{
+  height: auto;
+  width: auto;
+  max-height: 100px;
+  max-width: 300px;
+  padding: 30px 0 30px;
+  margin-top: 450px;
+  background-image: url(../images/wp1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.logoclass{
+  height: 30px;
+  padding-bottom: 5px;
+}
+
+
+/*About Me -  These style text*/
+.aboutme img{
+  height: 240px;
+  width: 240px;
+  font-size: 30px;
+  padding: 25px 20px;
+  border-radius: 50%;
+  background-color: #b06b56;
+}
+
+.aboutme{
+  padding: 80px 0 80px;
+  text-align: center;
+}
+.aboutme h2,
+.aboutme h4{
+  color: #fff;
+  margin: 20px 0 20px;
+}
+.aboutme p{
+  color: #fff;
+  font-size: 14px;
+  padding-bottom: 40px;
+}
+.aboutme i{
+  height: 80px;
+  width: 80px;
+  font-size: 30px;
+  padding: 25px 20px;
+  margin-top: 75px;
+  border-radius: 50%;
+  background-color: #b06b56;
+  color: #fff;
+}
+.
+
+/*Career Section*/
+.divideAS{
+  border-left:1px solid #b06b56;
+}
+/*Parallax*/
 .parallax2 {
     /* The image used */
-    background-image: url(../images/wp1.jpg);
-
+    background-image: url(../images/wp1.png);
+    height:350px;
+    width: 450px;
     /* Full height */
-    height: 100%;
+    /*height: 100%;*/
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -85,9 +165,65 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
 }
-div{}
-/*Custom Fonts*/
-@font-face {
-    font-family: anurati;
-    src: url(Anurati-Regular.otf);
+
+/*Popovers*/
+
+.popover-title {
+    color: #9d9d9d; /*This is text color*/
+    background: #526f77;
+    border-color: #9d9d9d;/*This is for the divider*/
+    font-size: 15px;
+}
+.popover-content {
+    color: #fff; /*Content box*/
+    background: #97bdd0;
+    font-size: 10px;
+}
+.popover{
+      border-color: black; /*Keep these the same*/
+      background: black;
+}
+.popover.bottom .arrow:after {
+  border-bottom-color: black; /*Arrow*/
+
+}
+
+/*Screen Size*/
+
+@media (max-width:1000px) {
+  .header{
+    padding: 30px;
+    height: 750px;
+  }
+  .header img{
+    width: 90%;
+    height: 300px;
+    margin: 20px 0 0 20px;
+  }
+  .header .btn{
+    font-size: 10px;
+    margin-left: 20px;
+  }
+  .header h1{
+    font-size: 20px;
+  }
+  .header p{
+    font-size: 10px;
+  }
+  .aboutme i,
+  .abtmep {
+    display: none;
+  }
+  .header .name{
+      margin-top: 350px;
+  }
+/*Try to add something to remove spacing of my face*/
+}
+
+.aboutme-cont{ /*Temp until i can figure out a good way to do a full - length wallpaper*/
+  background: #526f77;
+  background: -moz-radial-gradient(center, ellipse cover, #526f77 29%, #1a1e1f 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #526f77 29%,#1a1e1f 100%);
+  background: radial-gradient(ellipse at center, #526f77 29%,#1a1e1f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#526f77', endColorstr='#1a1e1f',GradientType=1 );
 }
