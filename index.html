@@ -11,6 +11,7 @@
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -19,7 +20,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
   <!--Navigation Bar-->
   <div id="myNavbar" class="navbar navbar-colour navbar-default navbar-fixed-top" role="navigation">
@@ -30,11 +31,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a href="#" class="navbar-brand">MD Website</a>
+        <a href="#header" class="navbar-brand "><img class="logoclass" src="images/Logo.png" alt=""></a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#header">Home</a></li>
           <!-- temp --->
           <li><a href="#aboutme">About Me</a></li>
           <li><a href="#career">Career</a></li>
@@ -53,21 +53,65 @@
           <h1>Responsive Web Design</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nobis.</p>
           <button class="btn btn-lg btn-primary">Buy Ahlie</button>
-          <button class="btn btn-lg btn-primary">More Stuff</button>
+          <button class="btn btn-lg btn-success">More Stuff</button>
         </div>
-        <div class="col-lg-6 col-md-6">
-          <h2>Maanav Dalal</h2>
-          <h3>Coder / Student / Gamer</h3>
+        <div class="col-lg-6 col-md-6 ">
+          <div class="name img"></div>
+
         </div>
       </div>
     </div>
   </div>
-  <div class="parallax2"></div>
+  <!-- About me -->
+  <div id="aboutme" class="aboutme aboutme-cont">
+    <div class="container">
 
+      <h2 class="text-center">About me</h2>
+      <p class="abtmep">Hover over the icons for some additional info!</p>
+      <div class="row">
+<div class="col-lg-2 col-md-2"><i class="fa fa-bookmark" title="Header" data-toggle="popover" data-trigger="hover" data-content="Some content" data-placement="bottom" aria-hidden="true"></i></div>
+        <div class="col-lg-2 col-md-2"><i class="fa fa-balance-scale" aria-hidden="true" title="Header" data-toggle="popover" data-trigger="hover" data-content="Some content" data-placement="bottom"></i></div>
+        <div class="col-lg-4 col-md-4"><img src="images/Deca-Photo.png" alt=""></div>
+        <div class="col-lg-2 col-md-2"><i class="fa fa-bolt" aria-hidden="true" title="Header" data-toggle="popover" data-trigger="hover" data-content="Some content" data-placement="bottom"></i></div>
+        <div class="col-lg-2 col-md-2"><i class="fa fa-coffee" aria-hidden="true" title="Header" data-toggle="popover" data-trigger="hover" data-content="Some content" data-placement="bottom"></i></div>
+      </div>
+      <div>
+        <h4>This is real</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sunt et voluptatem id itaque assumenda, voluptates suscipit consectetur! Aperiam odit recusandae, reiciendis quas, consequuntur, blanditiis ratione nemo maiores repellendus veniam
+          dolor autem! Id sapiente harum dolorum perferendis qui totam et. Doloremque id voluptatum vero neque nesciunt nihil dolore dolor quaerat aliquam possimus asperiores expedita, totam blanditiis in reiciendis est dicta quia, rerum quae quidem explicabo
+          hic assumenda. Hic laboriosam labore provident facilis! Delectus quos totam harum, accusamus numquam doloribus reiciendis, placeat adipisci cumque cupiditate earum, dolore praesentium facilis quibusdam ad eveniet nulla deleniti molestias sit
+          dolores assumenda? Molestiae, magnam atque.</p>
+      </div>
+
+
+    </div>
+  </div>
+  <!--Accomplishments/Skills--->
+  <!---https://codepen.io/michaelbarys/pen/rVvVJx For progress bars---->
+ <div class="career" id="career">
+    <div class="container">
+<div class="row">
+  <div class="col-lg-9 col-md-9 "><h2>Accomplishments</h2></div>
+  <div class="col-lg-3 col-md-3 divideAS"><h2>Skills</h2></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+
+  <!---Accomplishments--->
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
 </body>
+<!---Only until I learn jquery---->
+<script>
+  $(document).ready(function() {
+    $('[data-toggle="popover"]').popover();
+  });
+</script>
 
 </html>
