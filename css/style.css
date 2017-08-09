@@ -114,7 +114,6 @@ p {
 .aboutme img{
   height: 240px;
   width: 240px;
-  font-size: 30px;
   padding: 25px 20px;
   border-radius: 50%;
   background-color: #b06b56;
@@ -199,6 +198,19 @@ p {
 .projects h4{
   color: #fff;
 }
+.projects .btn-warning{
+  background-color: #026301;
+  border-color:  #026301;
+}
+.projects .btn-danger{
+  background-color: #4285F4;
+  border-color:  #4285F4;
+}
+.projects .btn-primary{
+  background-color: #51287A;
+  border-color:  #51287A;
+}
+
 /*Parallax*/
 .parallax2 {
     /* The image used */
@@ -269,7 +281,7 @@ body
 }
 .wrap
 {
-  margin:50px auto 0 auto;
+  margin:20px auto 0 auto;
   width:100%;
   display:flex;
   align-items:space-around;
@@ -280,7 +292,7 @@ body
   width:380px;
   height:380px;
   margin:10px;
-  background-color:#97bdd0;
+  background: linear-gradient(#526f77, #1a1e1f);
   display:inline-block;
   background-size:cover;
   position:relative;
@@ -294,17 +306,19 @@ body
 }
 .tile img
 {
-  height:100%;
-  width:100%;
+  margin-top: 25%;
+  max-height:100%;
+  max-width:100%;
   position:absolute;
   top:0;
   left:0;
   z-index:0;
   transition: all 0.4s ease-out;
+
 }
+
 .tile .text
 {
-/*   z-index:99; */
   position:absolute;
   padding:30px;
   height:calc(100% - 60px);
@@ -329,7 +343,6 @@ body
   font-weight:300;
   margin:20px 0 0 0;
   line-height: 25px;
-/*   opacity:0; */
   transform: translateX(-200px);
   transition-delay: 0.2s;
 }
@@ -340,31 +353,27 @@ body
 }
 .tile:hover
 {
-/*   background-color:#99aeff; */
+background-color:#b06b56;
 box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
-  transform:scale(1.05);
-    background-image: url(../images/wallpaper.jpg);/*Change this and add new class for different images*/
+  /*transform:scale(1.05);*/
 
 }
 .tile:hover img
 {
-  opacity: 0.2;
+  opacity: 0.1;
 }
 .tile:hover .animate-text
 {
   transform:translateX(0);
   opacity:1;
 }
+/*Screen Size*/
 
-@media (max-width: 1000px) {
+@media (max-width:1000px) {
   .wrap {
    flex-direction: column;
     width:400px;
   }
-}
-/*Screen Size*/
-
-@media (max-width:1000px) {
   .header{
     padding: 30px;
     height: 750px;
@@ -397,19 +406,10 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   }
 /*Try to add something to remove spacing of my face*/
 }
-
-.aboutme-cont{ /*Temp until i can figure out a good way to do a full - length wallpaper*/
-  background: #526f77;
-  background: -moz-radial-gradient(center, ellipse cover, #526f77 29%, #1a1e1f 100%);
-  background: -webkit-radial-gradient(center, ellipse cover, #526f77 29%,#1a1e1f 100%);
-  background: radial-gradient(ellipse at center, #526f77 29%,#1a1e1f 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#526f77', endColorstr='#1a1e1f',GradientType=1 );
-}
-
-.career-cont{
-  background: rgb(82,111,119);
-background: -moz-linear-gradient(top, rgba(82,111,119,1) 0%, rgba(26,30,31,1) 100%);
-background: -webkit-linear-gradient(top, rgba(82,111,119,1) 0%,rgba(26,30,31,1) 100%);
-background: linear-gradient(to bottom, rgba(82,111,119,1) 0%,rgba(26,30,31,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#526f77', endColorstr='#1a1e1f',GradientType=0 );
+.bg{
+    background: #526f77; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#526f77, #1a1e1f); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#526f77,#1a1e1f); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#526f77, #1a1e1f); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#526f77,#1a1e1f); /* Standard syntax */
 }

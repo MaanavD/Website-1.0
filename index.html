@@ -8,9 +8,9 @@
   <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>My Personal Website</title>
 
-  <!-- Bootstrap -->
+  <!-- Bootstrap-->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/font-awesome.css">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,7 +35,6 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <!-- temp --->
           <li><a href="#aboutme">About Me</a></li>
           <li><a href="#career">Career</a></li>
           <li><a href="#projects">My Projects</a></li>
@@ -46,13 +45,14 @@
   </div>
 
   <!--Header-->
+  <div class="bg">
   <div id="header" class="header">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-6">
           <h1>Responsive Web Design</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, nobis.</p>
-          <button class="btn btn-lg btn-primary">Buy Ahlie</button>
+          <button class="btn btn-lg btn-primary">Buy Styll</button>
           <button class="btn btn-lg btn-success">More Stuff</button>
         </div>
         <div class="col-lg-6 col-md-6 ">
@@ -63,7 +63,7 @@
     </div>
   </div>
   <!-- About me -->
-  <div id="aboutme" class="aboutme aboutme-cont">
+  <div id="aboutme" class="aboutme">
     <div class="container">
       <h2 class="text-center">About me</h2>
       <p class="abtmep">Hover over the icons for some additional info!</p>
@@ -85,7 +85,7 @@
     </div>
   </div>
   <!--Accomplishments/Skills--->
-  <div class="career career-cont" id="career">
+  <div class="career" id="career">
     <div class="container ">
       <div class="row ">
         <div class="col-lg-8 col-md-8 divideAS">
@@ -157,32 +157,32 @@
     </div>
   </div>
   <!--Projects--->
-  <div class="projects career-cont" id="projects">
+  <div class="projects" id="projects">
     <div class="container">
-      <h2 class="text-center">Projects</h2>
+      <h2 class="text-center">My Projects</h2>
       <div class="row">
         <div class="col-lg-4 col-md-4 text-center">
-          <h4 class="text-center">Repositories</h4>
+          <h4 class="text-center">Creations / Certifications</h4>
           <div>
-            <button class="btn btn-lg btn-primary">GitHub <i class="fa fa-github-alt" aria-hidden="true"></i></button>
+            <button onclick='location.href="https://github.com/MaanavD"' class="btn btn-lg btn-primary">GitHub <br><i class="fa fa-github-alt" aria-hidden="true"></i></button>
             <div>
-              <button class="btn btn-lg btn-warning">Google Drive <i class="fa fa-google" aria-hidden="true"></i></button>
+              <button onclick='location.href="https://www.freecodecamp.org/maanavd"' class="btn btn-lg btn-warning">Free Code Camp <br><i class="fa fa-free-code-camp" aria-hidden="true"></i></button>
               <div>
-                <button class="btn btn-lg btn-danger">Etc. <i class="fa fa-bitbucket" aria-hidden="true"></i></button>
+                <button onclick='location.href="https://www.freecodecamp.org/maanavd"' class="btn btn-lg btn-danger">Google Play Store<br><i class="fa fa-shopping-bag" aria-hidden="true"></i></button>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-lg-8 col-md-8">
-          <!---<div class="overlay"></div>--->
+        <h4 class="text-center">Notable Projects</h4>
           <div class="wrap">
-            <div class="tile">
-              <img src='images/Picture1.png' />
-              <div class="text">
+            <div class="tile battleship">
+              <img src='images/bs1.png' />
+              <div class="text" onclick='location.href="https://github.com/MaanavD/BattleShip"'>
                 <h1>BattleShip</h1>
-                <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
-                <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+                <h2 class="animate-text">My first real swing project, offerring two-player gameplay.</h2>
+                <p class="animate-text">Battleship is a game that dates back years, and here it has been beautifully recreated in Java.</p>
                 <div class="dots">
                   <span></span>
                   <span></span>
@@ -193,11 +193,11 @@
 
 
             <div class="tile">
-              <img src='images/Picture2.png' />
-              <div class="text">
+              <img src='images/ms2.png' />
+              <div class="text" onclick='location.href="https://github.com/MaanavD"'>
                 <h1>MineSweeper</h1>
-                <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
-                <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+                <h2 class="animate-text">For the casual offline player looking to step up their strategy.</h2>
+                <p class="animate-text">Created in Java using the NetBeans IDE, Minesweeper works in either 9x9 or 16x16 grids, with a flagging system that is a throwback to Windows XP.</p>
                 <div class="dots">
                   <span></span>
                   <span></span>
@@ -207,11 +207,11 @@
             </div>
 
             <div class="tile">
-              <img src='images/Picture3.png' />
-              <div class="text">
+              <img src='images/Deca.png' />
+              <div class="text" onclick='location.href="http://turnerfentondeca.com/"'>
                 <h1>DECA Website</h1>
-                <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
-                <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+                <h2 class="animate-text">Created with NodeJS using the Express Framework.</h2>
+                <p class="animate-text">Not my own project, but one I helped develop. Includes a login system and actively supported a full DECA chapter for over 2 years with asynchronous technology.</p>
                 <div class="dots">
                   <span></span>
                   <span></span>
@@ -226,11 +226,14 @@
       </div>
     </div>
   </div>
+  <div class="extlinks" id="extlinks">
+    <div class="container">
+      <div class="row">
+        <h2></h2>
+    </div>
   </div>
-  <!---  </div>
-  </div>--->
   </div>
-
+</div>
 
   <!---Accomplishments--->
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -241,11 +244,5 @@
 
   </script>
 </body>
-<!---Only until I learn jquery
-<script>
-  $(document).ready(function() {
-    $('[data-toggle="popover"]').popover();
-  });
-</script>---->
 
 </html>
