@@ -60,6 +60,9 @@ p {
 .navbar-colour {
     background-color: #526f77 !important;
 }
+.navbar-brand{
+padding-left: 0px !important;
+}
 /*Header*/
 .header{
   height: 600px;
@@ -131,8 +134,12 @@ p {
 .aboutme p{
   color: #fff;
   font-size: 14px;
+  padding-bottom: 10px;
+}
+.extrapad{
   padding-bottom: 40px;
 }
+
 .aboutme i{
   height: 80px;
   width: 80px;
@@ -148,9 +155,6 @@ p {
 .divideAS{
   border-right:1px solid #b06b56;
 }
-.career .i{
-
-}
 .career{
   padding: 80px 0 80px;
   text-align: center
@@ -163,13 +167,19 @@ p {
 .career p{
   color: #fff;
   font-size: 14px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
+}
+#white{
+  color: #000;
+  padding-bottom: 0px;
 }
 .career img{
   height: 35px;
   width: 35px;
 }
-
+.ifshort{
+  margin-left: 200px;
+}
 /*Projects*/
 .overlay{
   height: 400px;
@@ -292,7 +302,7 @@ body
   width:380px;
   height:380px;
   margin:10px;
-  background: linear-gradient(#526f77, #1a1e1f);
+  background:#526f77;
   display:inline-block;
   background-size:cover;
   position:relative;
@@ -367,6 +377,9 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   transform:translateX(0);
   opacity:1;
 }
+.widthfit{
+  width:100%;
+}
 /*Screen Size*/
 
 @media (max-width:1000px) {
@@ -404,8 +417,17 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
     border-right:none;
     border-bottom:1px solid #b06b56;
   }
+  .ifshort{
+    margin-left: 150px;
+  }
 /*Try to add something to remove spacing of my face*/
 }
+@media (max-width:500px) {
+  .ifshort{
+    margin-left: 15px;
+  }
+}
+
 .bg{
     background: #526f77; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#526f77, #1a1e1f); /* For Safari 5.1 to 6.0 */
