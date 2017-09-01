@@ -185,6 +185,12 @@ padding-left: 0px !important;
 .ifshort{
   margin-left: 200px;
 }
+.showifsmall{
+  visibility: hidden;
+  padding-right: 50%;
+  color: #fff;
+  text-decoration: underline;  
+}
 /*Projects*/
 .overlay{
   height: 400px;
@@ -225,7 +231,18 @@ padding-left: 0px !important;
   background-color: #51287A;
   border-color:  #51287A;
 }
+/*Footer / External Links*/
+.footer{
+  color: #fff;
+  padding-top: 25px;
+  text-align: center;
+}
+.footer .row{
 
+}
+.footer .sm{
+  
+}
 /*Parallax*/
 .parallax2 {
     /* The image used */
@@ -423,6 +440,29 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
   }
   .ifshort{
     margin-left: 150px;
+  }
+  .smallsize{
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .item:hover img {
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  .showifsmall{
+    visibility: visible;
+  }
+  .aboutme{
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: left;
+  }
+  .footer .padsmall{
+    padding-top: 15px;
+    width: 50%;
+    margin: auto;
   }
 /*Try to add something to remove spacing of my face*/
 }
