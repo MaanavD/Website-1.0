@@ -177,6 +177,11 @@ padding-left: 0px !important;
   height: 35px;
   width: 35px;
 }
+.item:hover img {
+  -moz-transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
 .ifshort{
   margin-left: 200px;
 }
@@ -240,12 +245,11 @@ padding-left: 0px !important;
 .progress-bar {
   width: 0;
   animation: progress 7s ease-in-out forwards;
-
+}
   .title {
     opacity: 0;
     animation: show 0.35s forwards ease-in-out 0.5s;
   }
-}
 
 @keyframes progress {
   from {
